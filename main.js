@@ -1,4 +1,4 @@
-var jsonStr = [{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false},{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false}];
+var jsonStr = [{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false},{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false},{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false},{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false,"6":{"1":{"1":"1","2":"2"}}}];
 var divSelector = '#tableDynamic';
 
 function tableCreator(e, t) {
