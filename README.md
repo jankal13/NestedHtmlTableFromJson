@@ -20,7 +20,7 @@ Test Json:
     "4":[
 
     ],
-    "5":false
+    "5":"false"
   },
   {
     "0":{
@@ -38,7 +38,7 @@ Test Json:
     "4":[
 
     ],
-    "5":false
+    "5":"false"
   }
 ];
 
