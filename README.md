@@ -40,7 +40,7 @@ Test Json:
     ],
     "5":false
   }
-]
+];
 
 
 Needed resources: jQuery, Bootstrap
