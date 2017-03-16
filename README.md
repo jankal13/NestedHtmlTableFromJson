@@ -8,4 +8,4 @@ Original source: https://2freeclear.wordpress.com/2014/08/09/create-nested-html-
 
 TODO: 
 - design
-- last element (in Example: 3.7) is not clickable
+- hyperlinks doesnt work all the time
