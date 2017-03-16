@@ -1,7 +1,14 @@
 var jsonStr = [{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false},{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false},{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false},{"0":{"example":"1","test":"2"},"1":{"example":"1","test":"2"},"2":{"example":"1"},"3":"1","4":[],"5":false,"6":{"1":{"1":"1","2":"2"}}}];
 var divSelector = '#tableDynamic';
 
+/*
+ *
+ * https://2freeclear.wordpress.com/2014/08/09/create-nested-html-tables-from-complex-json/
+ */
 function tableCreator(e, t) {
+   
+  var m = new MersenneTwister();
+  
   // inner function -> inner table
   function i(e, t) {
     var n = "";
@@ -49,7 +56,7 @@ function tableCreator(e, t) {
       if ($.isPlainObject(t)) {
         $.each(t, function(e, t) {
 
-            var n = 1 + Math.floor(Math.random() * 90 + 10);
+            var n = Math.floor(m.random() * 10000000);//1 + Math.floor(m.random() * 90) + 10;
             var s = $.isPlainObject(t);
             console.log("s: ", s);
             var o = [];
@@ -91,8 +98,8 @@ function tableCreator(e, t) {
           })
           //r += "</tr>"
       } else {
-
-        var n = 1 + Math.floor(Math.random() * 90 + 10);
+        // for string array
+        var n = Math.floor(m.random() * 10000000);
         if ($.isArray(t) && t.length > 0) {
           // string array
           console.log("string array ", "e: ", e, " t: ", t);
@@ -131,7 +138,7 @@ function tableCreator(e, t) {
   $.each(e, function(e, t) {
     console.log("t: ", t);
     //n += "<th>" + e + "</th>";
-    var s = 1 + Math.floor(Math.random() * 90 + 10);
+    var s = Math.floor(m.random() * 1000000);
     var o = $.isPlainObject(t);
     var u = [];
     if (o) {
