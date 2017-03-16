@@ -1,6 +1,5 @@
-/* source https://gist.github.com/banksean/300494 */
-
-
+/* source https://gist.github.com/banksean/300494 
+ */
 /*
   I've wrapped Makoto Matsumoto and Takuji Nishimura's code in a namespace
   so it's better encapsulated. Now you can have multiple random number generators
